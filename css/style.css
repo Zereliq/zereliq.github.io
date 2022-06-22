@@ -1,0 +1,370 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #1b1b1b 0%, #2b2929 15%, #050505 30%, #2b2929 65%, #050505 75%, #1f1d1d 110%);
+  background-attachment: fixed;
+  background-color: transparent;
+}
+
+#info, #volunteer {
+  background: linear-gradient(135deg, rgba(246, 148, 13, 0.8) 15%, rgba(206, 122, 49, 0.8) 30%, rgba(246, 148, 13, 0.8) 110%), url(/assets/lingefeest_bg_pattern_inverted.png);
+  color: white;
+}
+
+#lead, #lineup, #footer {
+  background: linear-gradient(135deg, rgba(53, 136, 136, 0.7) 15%, rgba(48, 97, 97, 0.9) 30%, rgba(53, 136, 136, 0.7) 110%), url(/assets/lingefeest_bg_pattern_inverted.png);
+}
+
+.margin-bot {
+  margin-bottom: 50px;
+}
+
+#lead a, #volunteer a {
+  color: white;
+}
+
+#images {
+  padding: 0;
+}
+
+#lead a:hover {
+  color: #f6841f;
+}
+
+#volunteer a:hover {
+  color: #00aeef;
+}
+
+.btn-grad-pri {
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  margin: 20px 0;
+}
+
+#lead h4 {
+  margin-bottom: 20px;
+}
+
+.btn-grad-pri:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-grad-sec {
+  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD 51%, #4CB8C4 100%);
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-grad-sec:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-logo {
+  margin: 10% 0 25%;
+  padding: 0 200px;
+}
+
+#hero .row {
+  background-image: url(/assets/lingefeest_hero.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.instagram {
+  margin-left: 20px;
+}
+
+#info h1, #volunteer h1 {
+  margin: 50px 0;
+}
+
+#lead, #footer {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.col-socials {
+  padding: 50px;
+}
+
+#info a {
+  color: white;
+}
+
+.google-iframe {
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.acc-btn {
+  color: white;
+  cursor: pointer;
+  padding: 5px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-bottom: 0px;
+}
+
+.acc-btn:before {
+  content: "+";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active-faq:before {
+  content: "−";
+}
+
+.panel {
+  color: white;
+  padding: 0 36px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel:before {
+  content: "−";
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+#info .row, #lead .row, #volunteer .row {
+  padding: 100px;
+}
+
+#lineup .row, #footer .row {
+  padding: 50px;
+}
+
+.btn img {
+  height: 20px;
+}
+
+.btn {
+  background: rgb(246, 148, 13);
+}
+
+.img-devider {
+  width: 100%;
+}
+
+#devider .col-12 {
+  padding: 0;
+}
+
+.lineup {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  height: 200px !important;
+  width: 200px !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+.lineup-artist1 {
+  background-image: url(/assets/lineup_artist1.jpg);
+}
+
+.lineup-artist1:before {
+  content: "De lievelings DJ's van je zusje";
+  margin-top: 120px;
+}
+
+.lineup-artist2 {
+  background-image: url(/assets/lineup_artist2.jpg);
+}
+
+.lineup-artist2:before {
+  content: "Raymon hermans";
+  margin-top: 120px;
+}
+
+.lineup-artist3 {
+  background-image: url(/assets/lineup_artist3.jpg);
+}
+
+.lineup-artist3:before {
+  content: "Outsiders";
+  margin-top: 120px;
+}
+
+.lineup-artist4 {
+  background-image: url(/assets/lineup_artist4.jpg);
+}
+
+.lineup-artist4:before {
+  content: "Galaga";
+  margin-top: 120px;
+}
+
+.lineup-artist5 {
+  background-image: url(/assets/lineup_artist5.jpg);
+}
+
+.lineup-artist5:before {
+  content: "Rave van fotuin";
+  margin-top: 120px;
+}
+
+.lineup-artist6 {
+  background-image: url(/assets/lineup_artist6.jpg);
+}
+
+.lineup-artist6:before {
+  content: "John West";
+  margin-top: 120px;
+}
+
+.lineup-artist7 {
+  background-image: url(/assets/lineup_artist7.jpg);
+}
+
+.lineup-artist7:before {
+  content: "Buren van de brandweer";
+  margin-top: 120px;
+}
+
+.lineup:before {
+  line-height: 27px;
+  text-align: center;
+  min-width: 200px;
+  max-width: 200px;
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  transform: rotate(2deg);
+}
+
+#lineup h1 {
+  margin-left: 50px;
+  color: white;
+}
+
+#lineup h1 b {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.lineup-blue::before {
+  text-shadow: 1px 1px 2px #00aeef, 0 0 1em #00aeef, 0 0 0.2em #00aeef;
+}
+
+.lineup-orange::before {
+  text-shadow: 1px 1px 2px #f6841f, 0 0 1em #f6841f, 0 0 0.2em #f6841f;
+}
+
+.lineup-orange {
+  border: solid #f6841f;
+  box-shadow: 5px -5px #f6841f;
+}
+
+.lineup-blue {
+  border: solid #00aeef;
+  box-shadow: 5px -5px #00aeef;
+}
+
+.lineup-hours {
+  color: white;
+}
+
+.lineup-hours {
+  position: absolute;
+  color: white;
+  z-index: 10;
+  padding-top: 90px;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.lineup-multiline {
+  padding-top: 70px !important;
+}
+
+.lineup-col {
+  margin-top: 20px;
+}
+
+.lineup-col:hover > .lineup {
+  z-index: -1;
+  filter: brightness(20%);
+}
+
+.lineup-col:hover > p {
+  opacity: 1;
+}
+
+@media screen and (min-width: 0px) {
+  .lineup-hours {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 576px) {
+  .lineup-hours {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lineup-col > p {
+    opacity: 1;
+  }
+
+  .lineup-col > .lineup {
+    z-index: -1;
+    filter: brightness(50%);
+  }
+
+  .hero-logo {
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lineup-hours {
+    width: 28vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lineup-hours {
+    width: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */
