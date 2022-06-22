@@ -70,6 +70,7 @@ body {
   background-size: 200% auto;
   color: white;
   border-radius: 10px;
+  display: block;
 }
 
 .btn-grad-sec:hover {
@@ -205,7 +206,7 @@ a {
   background-image: url(/assets/lineup_artist1.jpg);
 }
 
-.lineup-artist1:before {
+.lineup-before-artist1:before {
   content: "De lievelings DJ's van je zusje";
   margin-top: 120px;
 }
@@ -214,7 +215,7 @@ a {
   background-image: url(/assets/lineup_artist2.jpg);
 }
 
-.lineup-artist2:before {
+.lineup-before-artist2:before {
   content: "Raymon hermans";
   margin-top: 120px;
 }
@@ -223,7 +224,7 @@ a {
   background-image: url(/assets/lineup_artist3.jpg);
 }
 
-.lineup-artist3:before {
+.lineup-before-artist3:before {
   content: "Outsiders";
   margin-top: 120px;
 }
@@ -232,8 +233,8 @@ a {
   background-image: url(/assets/lineup_artist4.jpg);
 }
 
-.lineup-artist4:before {
-  content: "DJ Galaga";
+.lineup-before-artist4:before {
+  content: "Galaga";
   margin-top: 120px;
 }
 
@@ -241,8 +242,8 @@ a {
   background-image: url(/assets/lineup_artist5.jpg);
 }
 
-.lineup-artist5:before {
-  content: "Rave van fotuin";
+.lineup-before-artist5:before {
+  content: "Rave van fortuin";
   margin-top: 120px;
 }
 
@@ -250,7 +251,7 @@ a {
   background-image: url(/assets/lineup_artist6.jpg);
 }
 
-.lineup-artist6:before {
+.lineup-before-artist6:before {
   content: "John West";
   margin-top: 120px;
 }
@@ -259,21 +260,20 @@ a {
   background-image: url(/assets/lineup_artist7.jpg);
 }
 
-.lineup-artist7:before {
+.lineup-before-artist7:before {
   content: "Buren van de brandweer";
   margin-top: 120px;
 }
 
-.lineup:before {
+.lineup-col:before {
   line-height: 27px;
   text-align: center;
-  min-width: 200px;
-  max-width: 200px;
   position: absolute;
   font-weight: bold;
   color: white;
   font-size: 25px;
   transform: rotate(2deg);
+  z-index: 10000;
 }
 
 #lineup h1 {
@@ -283,14 +283,13 @@ a {
 
 #lineup h1 b {
   font-size: 20px;
-  margin-left: 20px;
 }
 
-.lineup-blue::before {
+.before-blue::before {
   text-shadow: 1px 1px 2px #00aeef, 0 0 1em #00aeef, 0 0 0.2em #00aeef;
 }
 
-.lineup-orange::before {
+.before-orange::before {
   text-shadow: 1px 1px 2px #f6841f, 0 0 1em #f6841f, 0 0 0.2em #f6841f;
 }
 
@@ -308,17 +307,21 @@ a {
   color: white;
 }
 
+.carousel-inner img {
+  margin: auto;
+}
+
 .lineup-hours {
   position: absolute;
   color: white;
   z-index: 10;
-  padding-top: 90px;
+  padding-top: 70px;
   opacity: 0;
   transition: all 500ms ease-in-out;
 }
 
 .lineup-multiline {
-  padding-top: 70px !important;
+  padding-top: 40px !important;
 }
 
 .lineup-col {
@@ -335,12 +338,12 @@ a {
 }
 
 @media screen and (min-width: 0px) {
-  .lineup-hours {
-    width: 75vw;
+  .lineup-hours, .lineup-col:before {
+    width: 80vw;
   }
 }
 @media screen and (min-width: 576px) {
-  .lineup-hours {
+  .lineup-hours, .lineup-col:before {
     width: 40vw;
   }
 }
@@ -354,17 +357,40 @@ a {
     filter: brightness(50%);
   }
 
+  .lineup-col:hover > .lineup {
+    z-index: -1;
+    filter: brightness(20%);
+  }
+
   .hero-logo {
     padding: 0 100px;
   }
+
+  #info .row, #lead .row, #volunteer .row {
+    padding: 25px;
+  }
+
+  #lineup .row, #footer .row {
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 1112px) {
+  #images {
+    display: none !important;
+  }
 }
 @media screen and (min-width: 768px) {
-  .lineup-hours {
+  .lineup-hours, .lineup-col:before {
     width: 28vw;
   }
 }
 @media screen and (min-width: 1200px) {
-  .lineup-hours {
+  .lineup-hours, .lineup-col:before {
+    width: 230px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .lineup-hours, .lineup-col:before {
     width: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
