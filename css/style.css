@@ -60,6 +60,10 @@ body {
   text-decoration: none;
 }
 
+.active-faq:before {
+  content: "−";
+}
+
 .btn-grad-sec {
   background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD 51%, #4CB8C4 100%);
   padding: 15px 45px;
