@@ -305,6 +305,18 @@ a {
   opacity: 1;
 }
 
+.panel a {
+  font-weight: bold;
+}
+
+.panel a:hover {
+  color: #00aeef !important;
+}
+
+a {
+  transition: all 250ms ease-in-out;
+}
+
 @media screen and (min-width: 0px) {
   .lineup-hours, .lineup-col:before {
     width: 80vw;
