@@ -1,3 +1,12 @@
+@charset "UTF-8";
+@font-face {
+  font-family: fontmain;
+  src: url(/assets/25854.woff);
+}
+.fontmain {
+  font-family: fontmain;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,13 +17,14 @@ body {
   background-color: transparent;
 }
 
-#info, #volunteer {
+#volunteer, #lineup {
   background: linear-gradient(135deg, rgba(246, 148, 13, 0.8) 15%, rgba(206, 122, 49, 0.8) 30%, rgba(246, 148, 13, 0.8) 110%), url(/assets/lingefeest_bg_pattern_inverted.png);
   color: white;
 }
 
-#lead, #lineup, #footer {
+#lead, #footer, #info {
   background: linear-gradient(135deg, rgba(53, 136, 136, 0.7) 15%, rgba(48, 97, 97, 0.9) 30%, rgba(53, 136, 136, 0.7) 110%), url(/assets/lingefeest_bg_pattern_inverted.png);
+  color: white;
 }
 
 .margin-bot {
@@ -29,7 +39,7 @@ body {
   padding: 0;
 }
 
-#lead a:hover {
+#lead .ahover a:hover {
   color: #f6841f;
 }
 
@@ -39,6 +49,7 @@ body {
 
 .btn-grad-pri {
   background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  font-family: fontmain;
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
@@ -79,7 +90,7 @@ body {
 }
 
 .hero-logo {
-  margin: 10% 0 25%;
+  margin: 15% 0 25%;
   padding: 0 200px;
 }
 
@@ -140,10 +151,26 @@ a {
   margin-left: 5px;
 }
 
+.active-faq:before {
+  content: "−";
+}
+
+.panel a {
+  font-weight: bold;
+}
+
+.panel a:hover {
+  color: #00aeef !important;
+}
+
+a {
+  transition: all 250ms ease-in-out;
+}
+
 .panel {
   color: white;
-  padding: 0 20px;
   max-height: 0;
+  padding: 0 18px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
@@ -197,6 +224,7 @@ a {
 .lineup-before-artist1:before {
   content: "De lievelings DJ's van je zusje";
   margin-top: 120px;
+  font-family: fontmain;
 }
 
 .lineup-artist2 {
@@ -206,6 +234,7 @@ a {
 .lineup-before-artist2:before {
   content: "Raymon Hermans";
   margin-top: 120px;
+  font-family: fontmain;
 }
 
 .lineup-artist3 {
@@ -215,6 +244,7 @@ a {
 .lineup-before-artist3:before {
   content: "Outsiders";
   margin-top: 120px;
+  font-family: fontmain;
 }
 
 .lineup-artist4 {
@@ -224,6 +254,7 @@ a {
 .lineup-before-artist4:before {
   content: "DJ Galaga";
   margin-top: 120px;
+  font-family: fontmain;
 }
 
 .lineup-artist5 {
@@ -233,6 +264,7 @@ a {
 .lineup-before-artist5:before {
   content: "Rave van Fortuin";
   margin-top: 120px;
+  font-family: fontmain;
 }
 
 .lineup-artist6 {
@@ -242,6 +274,7 @@ a {
 .lineup-before-artist6:before {
   content: "John West";
   margin-top: 120px;
+  font-family: fontmain;
 }
 
 .lineup-artist7 {
@@ -251,6 +284,7 @@ a {
 .lineup-before-artist7:before {
   content: "Buren van de Brandweer";
   margin-top: 120px;
+  font-family: fontmain;
 }
 
 .lineup-col:before {
@@ -325,18 +359,6 @@ a {
   opacity: 1;
 }
 
-.panel a {
-  font-weight: bold;
-}
-
-.panel a:hover {
-  color: #00aeef !important;
-}
-
-a {
-  transition: all 250ms ease-in-out;
-}
-
 @media screen and (min-width: 0px) {
   .lineup-hours, .lineup-col:before {
     width: 80vw;
@@ -351,37 +373,37 @@ a {
   .lineup-col > p {
     opacity: 1;
   }
-
   .lineup-col > .lineup {
     z-index: -1;
     filter: brightness(50%);
   }
-
   .lineup-col:hover > .lineup {
     z-index: -1;
     filter: brightness(20%);
   }
-
   .hero-logo {
     padding: 0 100px;
   }
-
   #info .row, #lead .row, #volunteer .row {
     padding: 25px;
   }
-
   #lineup .row, #footer .row {
     padding: 25px;
   }
 }
-@media screen and (max-width: 1112px) {
-  #images {
-    display: none !important;
+@media screen and (max-width: 600px) {
+  nav .menu, .menu * {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
   .lineup-hours, .lineup-col:before {
     width: 28vw;
+  }
+}
+@media screen and (max-width: 1112px) {
+  #images {
+    display: none !important;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -394,3 +416,86 @@ a {
     width: 300px;
   }
 }
+header {
+  z-index: -999999999;
+  width: 100%;
+  background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 20px;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  line-height: 60px;
+  transition: all 250ms ease-in-out;
+}
+
+nav, nav * {
+  z-index: 20;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #00aeef;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}/*# sourceMappingURL=style.css.map */
