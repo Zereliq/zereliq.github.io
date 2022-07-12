@@ -15,3 +15,15 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+function onScroll(){
+  var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  if(scrollTop > 0){
+    var element = document.getElementById("nav");
+    element.style.backgroundColor = "rgba(0,0,0,0%)"
+  }
+  else{
+    var element = document.getElementById("nav");
+    element.style.backgroundColor = "rgba(1,1,1,60%)"
+  }
+}
